@@ -27,7 +27,7 @@ def send_and_delete_message():
         }
         requests.post(delete_url, data=delete_data)
 
-# Main loop to send and delete messages every 5 minutes
+# Main loop to send and delete messages every 8 hours
 while True:
     send_and_delete_message()
     # Sleep for 8hs (28800 seconds) before sending the next message
